@@ -7,7 +7,7 @@ Every specified amount of time it checks for changes by comparing current hash o
 ## Setup
 > You can change settings based on your preferences in config.py (allegedly "shutil" library that i used here might not work on macos, so check if it works by using tests)
 
-Requirements: ``` Python 3.15 ```
+Requirements: ``` Python 3.13 ```
 
 Run: ```python setup.py```
  
