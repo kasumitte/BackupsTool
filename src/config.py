@@ -9,8 +9,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 class Config(BaseSettings):
     model_config = SettingsConfigDict(env_file='.env', case_sensitive=False, extra='ignore')
-    max_versions: int
-    max_file_size_mb: int
+    max_versions: int = 20
+    max_file_size_mb: int = 70
     db_path: Path = BASE_DIR / "data" / "versions.db"
     log_path: Path = BASE_DIR / "data" / "actions.csv"
     backup_path: Path = BASE_DIR / "data" / "backups"
